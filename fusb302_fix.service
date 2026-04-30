@@ -1,0 +1,14 @@
+[Unit]
+Description=FUSB302 Register Monitor (0x42)
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/fusb302_fix.sh
+Restart=always
+RestartSec=1
+
+User=root
+Environment=DISPLAY=:0
+
+[Install]
+WantedBy=multi-user.target
