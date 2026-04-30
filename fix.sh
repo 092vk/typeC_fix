@@ -4,7 +4,7 @@
 
 sudo cp Image /boot/Image-6.1.75-axon
 sudo cp fusb302_fix.sh /usr/bin/
-sudo cp fusb302_fix.service /etc/systmed/system/
+sudo cp fusb302_fix.service /etc/systemd/system/
 
 
 # add chmod permission
